@@ -1,0 +1,91 @@
+.site{
+	width:90%;
+	margin: 0 auto;
+	height: 1000px;
+}
+.category-panel {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.controls{
+	max-width: 350px;
+	margin: 0 auto;
+	position: relative;
+}
+.input{
+	color: #777;
+	padding: 10px;
+	font-size: 16px;
+	background: #fff;
+	display: block;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.controls:hover > .input,
+.category:hover{
+	color:#7D3B3B;
+	background:#D6D6D6;
+	text-indent: 50%;
+}
+.tip-1{
+	color: #777;
+	font-size: 10px;
+	position: absolute;
+	top:15px;
+	left: 5%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;	
+}
+.controls:hover > .tip-1{
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+.categories {
+	max-height: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 350px;
+	margin-top:5px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.categories-show{
+	max-height: 999px;
+}
+.categories ul {
+	color: #777;
+	font-size: 16px;
+	background: #fff;
+	display: block;
+	cursor: pointer;
+}
+.category{
+	border-width: 1px 1px 0px;
+	border-style: solid;
+	border-color: #ccc;
+	padding: 10px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.category:last-child{
+	border: 1px solid #ccc;
+	padding: 10px;
+}
