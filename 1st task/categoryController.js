@@ -46,6 +46,7 @@ class CategoryCtrl {
 	events () {
 		var self = this;
 		this.objects.controls.addEventListener('click',this.toggleShow.bind(this));
+		this.view.addEventListener('mouseleave',event => this.objects.categories.classList.remove('categories-show'));
 		this.objects.categories.addEventListener('click',this.changeCategory.bind(this));
 	}
 
