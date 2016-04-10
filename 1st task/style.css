@@ -61,6 +61,8 @@
 	max-height: 0;
 	overflow: hidden;
 	margin-top:5px;
+	position: absolute;
+	width:350px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -89,4 +91,15 @@
 .category:last-child{
 	border: 1px solid #ccc;
 	padding: 10px;
+}
+.news-panel{
+	margin-top: 150px;
+}
+.blank{
+	min-height: 150px;
+	max-height: 500px;
+	text-align: center;
+	color:#777;
+	font-size: 60px;
+	line-height: 60px;
 }
