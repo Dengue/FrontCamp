@@ -1,25 +1,19 @@
 'use strict';
 
-var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = require('babel-runtime/helpers/createClass');
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var CategoryCtrl = function () {
 	function CategoryCtrl(view) {
-		(0, _classCallCheck3.default)(this, CategoryCtrl);
+		_classCallCheck(this, CategoryCtrl);
 
 		this.view = document.querySelector(view);
 		this.bindObject();
 		this.events();
 	}
 
-	(0, _createClass3.default)(CategoryCtrl, [{
+	_createClass(CategoryCtrl, [{
 		key: 'bindObject',
 		value: function bindObject() {
 			this.objects = {};
@@ -81,5 +75,6 @@ var CategoryCtrl = function () {
 			};
 		}
 	}]);
+
 	return CategoryCtrl;
 }();

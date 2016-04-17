@@ -1,31 +1,21 @@
 'use strict';
 
-var _getIterator2 = require('babel-runtime/core-js/get-iterator');
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _getIterator3 = _interopRequireDefault(_getIterator2);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = require('babel-runtime/helpers/createClass');
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-require('babel-polyfill');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//import "babel-polyfill";
 
 var NewsReader = function () {
 	function NewsReader(view, template) {
-		(0, _classCallCheck3.default)(this, NewsReader);
+		_classCallCheck(this, NewsReader);
 
 		this.view = document.querySelector(view);
 		this.template = template;
 		this.events();
 	}
 
-	(0, _createClass3.default)(NewsReader, [{
+	_createClass(NewsReader, [{
 		key: 'events',
 		value: function events() {
 			Globals.observer.addListener(this, 'category-changed', this.fetchNews);
@@ -60,7 +50,7 @@ var NewsReader = function () {
 			var _iteratorError = undefined;
 
 			try {
-				for (var _iterator = (0, _getIterator3.default)(results), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+				for (var _iterator = results[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
 					var event = _step.value;
 
 					console.log(event);
@@ -98,5 +88,6 @@ var NewsReader = function () {
 			};
 		}
 	}]);
+
 	return NewsReader;
 }();
