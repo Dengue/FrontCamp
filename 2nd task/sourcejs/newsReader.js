@@ -1,4 +1,3 @@
-//import "babel-polyfill";
 
 class NewsReader {
 	constructor(view,template) {
