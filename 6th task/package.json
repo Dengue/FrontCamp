@@ -1,0 +1,17 @@
+{
+  "name": "5thtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^2.1.18"
+  },
+  "devDependencies": {
+    "mongodb": "^2.1.18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

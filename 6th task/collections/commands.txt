@@ -1,0 +1,5 @@
+mongoimport --db blog --collection articles --drop --file /collections/articles.json
+
+
+mongoimport --db blog --collection authors --drop --file /resources/authors.json
+
